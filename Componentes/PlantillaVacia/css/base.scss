@@ -820,7 +820,35 @@ html, body {
     }
   }
 }
-  
+
+
+.cuadro-contacto.segundo-cuadro {
+  height: 200px; // más pequeño que el original
+  max-width: 703px;
+  margin-left: 320px; // separarlo del primero
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: $secondary-color;
+
+  .contenido-blanco {
+    width: 100%;
+    padding: 20px;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: $third-color;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #333;
+    }
+  }
+}
+
+
 
 
 

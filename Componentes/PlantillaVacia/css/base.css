@@ -706,27 +706,42 @@ html, body {
   font-family: "Ancizar sans";
 }
 
-.cuadro-contacto.segundo-cuadro {
-  height: 200px;
-  max-width: 703px;
-  margin-left: 320px;
-  border-radius: 12px;
-  overflow: hidden;
+.cuadro-blanco {
+  flex: 0 0 534px;
+  height: 173px;
   background-color: #F1F7F7;
+  border-radius: 12px;
+  margin-bottom: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
 }
-.cuadro-contacto.segundo-cuadro .contenido-blanco {
+.cuadro-blanco .contenido-blanco {
   width: 100%;
   padding: 20px;
 }
-.cuadro-contacto.segundo-cuadro .contenido-blanco h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.cuadro-blanco .contenido-blanco h2 {
+  font-size: 18px;
+  font-weight: bold;
   color: #45B38F;
+  font-family: "Ancizar sans";
+  margin-bottom: 10px;
 }
-.cuadro-contacto.segundo-cuadro .contenido-blanco p {
-  font-size: 16px;
+.cuadro-blanco .contenido-blanco p {
+  font-size: 18px;
   line-height: 1.4;
-  color: #333;
+  color: #45B38F;
+  font-family: "Ancizar sans";
+  margin-left: 35px;
+}
+
+@media (max-width: 1050px) {
+  .cuadro-blanco {
+    flex: 0 0 auto;
+    width: 90%;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */

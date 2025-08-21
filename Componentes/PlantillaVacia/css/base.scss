@@ -822,29 +822,46 @@ html, body {
 }
 
 
-.cuadro-contacto.segundo-cuadro {
-  height: 200px; // más pequeño que el original
-  max-width: 703px;
-  margin-left: 320px; // separarlo del primero
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: $secondary-color;
+.cuadro-blanco {
+  flex: 0 0 534px;              // Ancho fijo del cuadro
+  height: 173px;                // Misma altura que cuadro-contacto
+  background-color: $secondary-color;       // Fondo blanco
+  border-radius: 12px;          // Bordes redondeados
+  margin-bottom: 160px;
+  display: flex;
+  align-items: center;          // Centra verticalmente el contenido
+  justify-content: center;      // Centra horizontalmente el contenido
+  
+  margin-left: 40px;
 
   .contenido-blanco {
-    width: 100%;
+    width: 100%;                
     padding: 20px;
 
     h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: $third-color;
+      font-size: 18px;
+      font-weight: bold;
+      color: $third-color;      
+      font-family: $font-family;
+      margin-bottom: 10px;     
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.4;
-      color: #333;
+      color: $third-color;
+      font-family: $font-family;
+      margin-left: 35px;
     }
+  }
+}
+
+// Responsive: Apilar cuadros en pantallas pequeñas
+@media (max-width: 1050px) {
+  .cuadro-blanco {
+    flex: 0 0 auto;             // Se adapta al ancho disponible
+    width: 90%;                 // Casi todo el ancho en móviles
+    margin-top: 20px;           // Separación debajo del primer cuadro
   }
 }
 

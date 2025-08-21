@@ -736,11 +736,58 @@ html, body {
   margin-left: 35px;
 }
 
-@media (max-width: 1050px) {
-  .cuadro-blanco {
-    flex: 0 0 auto;
-    width: 90%;
+@media (max-width: 768px) {
+  .seccion-contacto {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .cuadro-contacto {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .cuadro-contacto .franja-verde {
+    width: 100%;
+    height: 80px;
+  }
+  .cuadro-contacto .contenido-blanco {
+    width: 100%;
+    padding: 20px;
+  }
+  .cuadro-contacto .contenido-blanco h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .cuadro-contacto .contenido-blanco p {
+    font-size: 16px;
+  }
+  .bloque-contacto {
+    margin-left: 0;
     margin-top: 20px;
+    text-align: center;
+  }
+  .bloque-contacto h3, .bloque-contacto p {
+    font-size: 16px;
+  }
+  .cuadro-blanco {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .cuadro-blanco .contenido-blanco {
+    padding: 20px;
+  }
+  .cuadro-blanco .contenido-blanco h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .cuadro-blanco .contenido-blanco p {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 

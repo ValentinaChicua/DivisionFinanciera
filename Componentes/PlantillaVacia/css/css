@@ -240,6 +240,87 @@ html, body {
   color: #F1F7F7;
 }
 
+@media (max-width: 768px) {
+  .seccion-contabilidad {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .seccion-contabilidad .contabilidad-content {
+    flex-direction: column;
+  }
+  .seccion-contabilidad .contabilidad-left,
+  .seccion-contabilidad .section-right {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .seccion-contabilidad .contabilidad-title {
+    font-size: 36px;
+  }
+  .seccion-contabilidad .contabilidad-description {
+    font-size: 20px;
+  }
+  .seccion-terceros {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .seccion-terceros .terceros-title,
+  .seccion-terceros .terceros-description,
+  .seccion-terceros .terceros-steps-text,
+  .seccion-terceros .terceros-infografia-text {
+    margin: 20px 0;
+    font-size: 22px;
+    text-align: center;
+  }
+  .seccion-terceros .terceros-steps,
+  .seccion-terceros .terceros-infografia {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .seccion-terceros .terceros-infografia-img {
+    margin: 10px 0;
+  }
+  .seccion-preguntas {
+    padding: 20px;
+    height: auto;
+  }
+  .seccion-preguntas .preguntas-notificacion-text,
+  .seccion-preguntas .preguntas-solicitud-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  .seccion-preguntas .preguntas-todo-text {
+    font-size: 48px;
+  }
+  .seccion-preguntas .preguntas-satisfaccion-text {
+    font-size: 20px;
+  }
+  .seccion-preguntas .preguntas-botones {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cuadro-contacto,
+  .cuadro-blanco {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  .cuadro-contacto .franja-verde,
+  .cuadro-blanco .franja-verde {
+    width: 100%;
+    height: 80px;
+  }
+  .cuadro-contacto .contenido-blanco,
+  .cuadro-blanco .contenido-blanco {
+    width: 100%;
+    padding: 20px;
+  }
+}
 .faq-section {
   display: flex;
   justify-content: space-between;

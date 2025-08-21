@@ -328,14 +328,18 @@ html, body {
   margin: 0;
   padding: 0 50px;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 
   > li {
     position: relative;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     padding: 10px 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
     font-size: 17px;
 
     &:hover {
@@ -431,6 +435,7 @@ html, body {
     display: flex;
     align-items: center;
     margin-top: 310px;
+    gap: 20px;
 
     .terceros-steps-text {
       font-family: $font-family;
@@ -439,6 +444,7 @@ html, body {
       font-size: 26px;
       line-height: 120%;
       margin-left: 300px;
+      margin-left: 50px;
     }
   }
 
@@ -781,136 +787,40 @@ html, body {
 }
 
 .bloque-contacto {
-  margin-bottom: 0;
-  margin-left: 60px;
+  margin-left: 10px;
 
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: $third-color;
-    margin: 0; // quita el margen por defecto
-    font-family: $font-family;
-  }
+  .item-contacto {
+    display: flex;           
+    align-items: flex-start; 
+    
 
-  p {
-    font-size: 18px;
-    line-height: 1; // mejor usar 1 en lugar de 0
-    margin: 0; // quita el margen por defecto
-    color: #45B38F;
-    font-family: $font-family;
-  }
-
-
-  
-}
-
-
-.cuadro-blanco {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 534px;
-  height: 173px;
-  margin-left: 30px; // separación entre cuadros
-  border-radius: 12px;
-  background-color: $secondary-color;
-  overflow: hidden;
-  align-self: flex-start;
-  margin-top: 78px; // más discreto que -30px
-
-  
-
-  .contenido-blanco {
-    padding: 20px;
-    color: #333;
-
-    h2 {
-      font-size: 18px;
-      font-weight: bold;
-      font-family: $font-family;
-      margin-bottom: 10px;
-      color: $third-color;
+    img {
+      width: 30px;           // tamaño del icono
+      height: 39px;
+      margin-right: 25px;    // espacio entre icono y texto
     }
 
-    p {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 1;
-      margin: 0;
-      color: $third-color;
-      font-family: $font-family;
-      line-height: 45px;
-    }
-
-  
-  }
-}
-
-@media (max-width: 768px) {
-  .seccion-contacto {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-
-  .cuadro-contacto {
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-    margin-left: 0;
-
-    .franja-verde {
-      width: 100%;
-      height: 80px;
-    }
-
-    .contenido-blanco {
-      width: 100%;
-      padding: 20px;
-
-      h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
+    .texto {
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: $third-color;
+        margin: 0;
+        font-family: $font-family;
+        
       }
 
       p {
-        font-size: 16px;
-      }
-    }
-  }
-
-  .bloque-contacto {
-    margin-left: 0;
-    margin-top: 20px;
-    text-align: center;
-
-    h3, p {
-      font-size: 16px;
-    }
-  }
-
-  .cuadro-blanco {
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-top: 30px;
-
-    .contenido-blanco {
-      padding: 20px;
-
-      h2 {
-        font-size: 16px;
-        margin-bottom: 8px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 1.4;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        color: #45B38F;
+        font-family: $font-family;
       }
     }
   }
 }
+  
 
 
 
